@@ -8,16 +8,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    r = 0
+    min = 0
     if a < b:
         if a < c:
-            r = a
+            min = a
         else:
-            r = c
+            min = c
     else:
         if b < c:
-            r = b
+            min = b
         else:
-            r = c            
+            min = c            
 
-    return r  
+    return min 
