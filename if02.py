@@ -15,6 +15,6 @@ def main(a,b,c):
     else:
         if b < c:
             r = b
-        r =c            
+        r = c            
 
     return r
