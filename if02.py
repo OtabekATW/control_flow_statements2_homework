@@ -12,9 +12,12 @@ def main(a,b,c):
     if a < b:
         if a < c:
             r = a
+        else:
+            r = c
     else:
         if b < c:
             r = b
-        r = c            
+        else:
+            r = c            
 
     return r  
