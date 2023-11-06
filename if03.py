@@ -8,18 +8,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    mx = a
-    if mx < b:
+    mx =  a
+    if mx > b:
         mx = b
-    if mx < c:
+    if mx > c:
         mx = c
 
-    mn = a    
-    if mn > b:
+    mn = a
+    if mn < b:
         mn = b
-    if mn > c:
+    if mn < c:
         mn = c
-
-    middle = a + b + c - mn - mx                                        
-
-    return middle
+    
+    return a + b + c - mx - mn
