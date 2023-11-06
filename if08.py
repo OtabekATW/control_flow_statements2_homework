@@ -15,18 +15,16 @@ def main(number):
         str: return answer.
     """
     if number == 1:
-        s = 'Monday'
+        return "Monday"
     elif number == 2:
-        s = 'Tuesday'
+        return "Tuesday"
     elif number == 3:
-        s = 'Wednesday'
+        return "Wednesday"
     elif number == 4:
-        s = 'Thursday'
+        return "Thursday"
     elif number == 5:
-        s = 'Friday'
+        return "Friday"
     elif number == 6:
-        s = 'Saturday'
+        return "Saturday"
     elif number == 7:
-        s = 'Sunday'
-
-    return s
+        return "Sunday"
