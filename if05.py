@@ -8,9 +8,9 @@ def main(n):
     """
     x1 = n % 10
     n = n // 10
-    
+
     x2 = n % 10
-    n = n // 10
+    n == n // 10
 
     x3 = n % 10
     n = n // 10
@@ -19,54 +19,16 @@ def main(n):
     n = n // 10
 
     x5 = n % 10
+    n = n // 10
 
-    r = 0
+    mx = x1
+    if mx < x2:
+        mx = x2
+    if mx < x3:
+        mx = x3
+    if mx < x4:
+        mx = x4
+    if mx < x5:
+        mx = x5
 
-    if x1 > x2:
-        if x1 > x3:
-            if x1 > x4:
-                if x1 > x5:
-                    r = x1
-                else:
-                    r = x5
-            else:
-                if x4 > x5:
-                    r = x4
-                else:
-                    r = x5         
-        else:
-            if x3 > x4:
-                if x3 > x5:
-                    r = x3
-                else:
-                    r = x5
-            else:
-                if x4 > x5:
-                    r = x4
-                else:
-                    r = x5
-    else:
-        if x2 > x3:
-            if x2 > x4:
-                if x2 > x5:
-                    r = x2
-                else:
-                    r = x5
-            else:
-                if x4 > x5:
-                    r = x4
-                else:
-                    r = x5
-        else:
-            if x3 > x4:
-                if x3 > x5:
-                    r = x3
-                else:
-                    r = x5
-            else:
-                if x4 > x5:
-                    r = x4
-                else:
-                    r = x5                                      
-
-    return r
+    return mx
