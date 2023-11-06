@@ -19,7 +19,6 @@ def main(n):
     n = n // 10
 
     x5 = n % 10
-    n = n // 10
 
     mx = x1
     if mx < x2:
