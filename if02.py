@@ -7,17 +7,14 @@ def main(a,b,c):
         c: Third number.
     Returns:
         int: return answer.
-    """
-    min = 0
+    """ 
     if a < b:
         if a < c:
-            min = a
+            return a
         else:
-            min = c
+            return c
     else:
         if b < c:
-            min = b
+            return b
         else:
-            min = c            
-
-    return min 
+            return c
