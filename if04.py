@@ -8,10 +8,8 @@ def main(a,b):
         int: return answer.
     """
     if a == b:
-        r = 0
+        return 0
+    if a > b:
+        return a
     else:
-        if a > b:
-            r = a
-        else:
-            r = b    
-    return r
+        return b
